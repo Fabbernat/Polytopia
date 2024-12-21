@@ -1,0 +1,62 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.map {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.tile {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 1px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+    /* Mezőtípusok stílusai */
+    .tile.ocean {
+        background-color: #1e90ff;
+    }
+
+    .tile.water {
+        background-color: #00bfff;
+    }
+
+    .tile.land {
+        background-color: #228b22;
+    }
+
+    .tile.fruit {
+        background-color: #ff6347;
+    }
+
+    .tile.farm {
+        background-color: #f4a460;
+    }
+
+    .tile.forest {
+        background-color: #006400;
+    }
+
+    .tile.forest_with_animal {
+        background-color: #8b4513;
+    }
+
+    .tile.mountain {
+        background-color: #a9a9a9;
+    }
+
+    .tile.mountain_with_metal {
+        background-color: #808080;
+    }

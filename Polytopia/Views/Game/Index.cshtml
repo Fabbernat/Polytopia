@@ -1,0 +1,31 @@
+﻿@model Polytopia.Models.Game
+
+@{
+    ViewData["Title"] = "The Battle of Polytopia";
+}
+
+<h2>Üdv, @Model.Username!</h2>
+<h3>A választott törzsed: @Model.SelectedTribe</h3>
+
+<h4>Botok száma: @Model.BotCount</h4>
+<ul>
+    @foreach (var botTribe in Model.BotTribes)
+    {
+        <li>Bot törzs: @botTribe</li>
+    }
+</ul>
+
+<h3>Térkép</h3>
+<div class="map">
+    @for (int y = 0; y < 16; y++)
+    {
+        <div class="row">
+            @for (int x = 0; x < 16; x++)
+            {
+                <div class="tile @Model.Map[x, y]">@Model.Map[x, y]</div>
+            }
+        </div>
+    }
+</div>
+
+<link rel="stylesheet" href="~/css/style.css">
