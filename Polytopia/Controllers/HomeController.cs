@@ -18,7 +18,22 @@ namespace Polytopia.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Settings()
+        {
+            return View();
+        }
+
+        public IActionResult HallOfFame()
+        {
+            return View();
+        }
+
+        public IActionResult ThroneRoom()
+        {
+            return View();
+        }
+
+        public IActionResult About()
         {
             return View();
         }

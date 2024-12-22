@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Polytopia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ed86d1442efea4c08039d071b5ad3f2e367c7ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("Polytopia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Polytopia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

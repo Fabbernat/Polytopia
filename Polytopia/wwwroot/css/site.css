@@ -1,3 +1,5 @@
+/* wwwroot/css/site.css */
+
 html {
   font-size: 14px;
 }
@@ -19,4 +21,12 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+.main-background {
+    background-image: url('/images/polytopia-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ensures it fills the viewport height */
 }
