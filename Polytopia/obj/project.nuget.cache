@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CXkk3FqGzI8=",
+  "dgSpecHash": "iWjQzI4RqAo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bernát\\Source\\Repos\\Polytopia\\Polytopia\\Polytopia.csproj",
+  "projectFilePath": "C:\\Users\\Bernát\\source\\repos\\Polytopia\\Polytopia\\Polytopia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bernát\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Bernát\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

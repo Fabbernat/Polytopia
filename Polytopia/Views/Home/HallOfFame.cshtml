@@ -1,10 +1,221 @@
-﻿<!DOCTYPE html>
-<html>
+﻿@model List<HighScoreEntry>
+
+@{
+	ViewData["Title"] = "Hall of Fame";
+}
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"]</title>
+	<style>
+		body {
+			font-family: 'Arial', sans-serif;
+			margin: 0;
+			background: linear-gradient(to bottom, #ff5f9e, #ffa8c5);
+			color: white;
+			text-align: center;
+		}
+
+		h1 {
+			margin-top: 20px;
+			font-size: 2em;
+		}
+
+		.tabs {
+			margin: 20px auto;
+			display: flex;
+			justify-content: center;
+			gap: 15px;
+		}
+
+			.tabs button {
+				background-color: #fff;
+				color: #c30052;
+				border: none;
+				padding: 10px 20px;
+				font-size: 1em;
+				cursor: pointer;
+				border-radius: 5px;
+			}
+
+				.tabs button.active {
+					background-color: #c30052;
+					color: white;
+				}
+
+		.highscore-list {
+			margin: 20px auto;
+			width: 90%;
+			max-width: 600px;
+			text-align: left;
+		}
+
+		.highscore-item {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 8px 0;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		}
+
+			.highscore-item:nth-child(odd) {
+				background: rgba(255, 255, 255, 0.05);
+			}
+
+		.rank {
+			font-weight: bold;
+			width: 10%;
+		}
+
+		.username {
+			width: 60%;
+			text-align: left;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		.score {
+			width: 20%;
+			text-align: right;
+		}
+	</style>
 </head>
 <body>
+	<h1>- Weekly High Score -</h1>
+	<div class="tabs">
+		<button class="active">All Tribes</button>
+		<button>Xin-xi</button>
+		<button>Imperius</button>
+		<button>Bardur</button>
+		<button>Oumaji</button>
+		<button>Kickoo</button>
+		<button>Hoodrick</button>
+		<button>Luxidoor</button>
+		<button>Vengir</button>
+		<button>Zebasi</button>
+		<button>Quetzali</button>
+		<button>Ai-Mo</button>
+		<button>Yadakk</button>
+		<button>Aquarion</button>
+		<button>Elyrion</button>
+		<button>Polaris</button>
+		<button>Cymanti</button>
+	</div>
 
+	<div class="highscore-list">
+		@if (Model != null && Model.Any())
+		{
+			@for (int i = 0; i < Model.Count && i < 100; i++)
+			{
+				<div class="highscore-item">
+					<div class="rank">@(i + 1).</div>
+					<div class="username">@Model[i].Username</div>
+					<div class="score">@Model[i].Score.ToString("N0")</div>
+				</div>
+			}
+		}
+		else
+		{
+			<h2>High Scores:</h2>
+			<ol>
+				<li>selected_tribe_icon Midjiwan........................252578</li>
+				<li>selected_tribe_icon Zoy.............................195069</li>
+				<li>selected_tribe_icon Innofunni.......................193800</li>
+				<li>selected_tribe_icon GullYY..........................172330</li>
+				<li>selected_tribe_icon ShadowRex.......................165450</li>
+				<li>selected_tribe_icon Kairos..........................160210</li>
+				<li>selected_tribe_icon NightWolf.......................158990</li>
+				<li>selected_tribe_icon Zypher..........................155440</li>
+				<li>selected_tribe_icon Thornshade......................152890</li>
+				<li>selected_tribe_icon Starflame.......................150230</li>
+				<li>selected_tribe_icon Eryndor.........................148770</li>
+				<li>selected_tribe_icon SilverFang......................147890</li>
+				<li>selected_tribe_icon Auriel..........................145340</li>
+				<li>selected_tribe_icon Thunderhawk.....................143200</li>
+				<li>selected_tribe_icon Bluemist........................141890</li>
+				<li>selected_tribe_icon Emberkin........................139560</li>
+				<li>selected_tribe_icon Vireth..........................137230</li>
+				<li>selected_tribe_icon Crestfallen.....................135670</li>
+				<li>selected_tribe_icon Moonshadow......................134890</li>
+				<li>selected_tribe_icon Silverblade.....................132210</li>
+				<li>selected_tribe_icon ShadowWhisper...................130450</li>
+				<li>selected_tribe_icon Lunaris.........................128990</li>
+				<li>selected_tribe_icon AshenWing.......................127880</li>
+				<li>selected_tribe_icon DuskRider.......................126340</li>
+				<li>selected_tribe_icon Blazefang.......................125100</li>
+				<li>selected_tribe_icon Zephyros........................124330</li>
+				<li>selected_tribe_icon Windcaller......................122560</li>
+				<li>selected_tribe_icon Ironheart.......................121230</li>
+				<li>selected_tribe_icon Crimsonblade....................120120</li>
+				<li>selected_tribe_icon Everfrost.......................118780</li>
+				<li>selected_tribe_icon Flameguard......................117210</li>
+				<li>selected_tribe_icon Stoneclaw.......................115600</li>
+				<li>selected_tribe_icon Frostbyte.......................114230</li>
+				<li>selected_tribe_icon Nightbane.......................112990</li>
+				<li>selected_tribe_icon Ironspire.......................111120</li>
+				<li>selected_tribe_icon TwilightRogue...................110350</li>
+				<li>selected_tribe_icon Darkflame.......................109670</li>
+				<li>selected_tribe_icon Windshrike......................108200</li>
+				<li>selected_tribe_icon Emberlash.......................107100</li>
+				<li>selected_tribe_icon Voidcaller......................106340</li>
+				<li>selected_tribe_icon Thunderclap.....................105890</li>
+				<li>selected_tribe_icon Starfire........................104550</li>
+				<li>selected_tribe_icon Shadeweaver.....................103340</li>
+				<li>selected_tribe_icon Riftwalker......................102120</li>
+				<li>selected_tribe_icon Venomfang.......................101450</li>
+				<li>selected_tribe_icon Gloomshard......................100780</li>
+				<li>selected_tribe_icon Ebonheart.......................100000</li>
+				<li>selected_tribe_icon Tempestwing.....................99500</li>
+				<li>selected_tribe_icon CrimsonWhisper..................98560</li>
+				<li>selected_tribe_icon Frostborn.......................97500</li>
+				<li>selected_tribe_icon Voidstalker.....................96560</li>
+				<li>selected_tribe_icon Zephyrshade.....................95510</li>
+				<li>selected_tribe_icon Steelshade......................94560</li>
+				<li>selected_tribe_icon Skyfang.........................93520</li>
+				<li>selected_tribe_icon Mistwalker......................92580</li>
+				<li>selected_tribe_icon Shadowveil......................91540</li>
+				<li>selected_tribe_icon Ashenspire......................90500</li>
+				<li>selected_tribe_icon Stoneweaver.....................89560</li>
+				<li>selected_tribe_icon Runeblade.......................88510</li>
+				<li>selected_tribe_icon Duskrider.......................87560</li>
+				<li>selected_tribe_icon Stormblade......................86520</li>
+				<li>selected_tribe_icon Icefang.........................85580</li>
+				<li>selected_tribe_icon Nightstalker....................84510</li>
+				<li>selected_tribe_icon Skyshard........................83560</li>
+				<li>selected_tribe_icon Emberheart......................82510</li>
+				<li>selected_tribe_icon Ravenclaw.......................81560</li>
+				<li>selected_tribe_icon Grimshade.......................80520</li>
+				<li>selected_tribe_icon Thunderveil.....................79510</li>
+				<li>selected_tribe_icon Cloudspire......................78560</li>
+				<li>selected_tribe_icon Shadowfrost.....................77520</li>
+				<li>selected_tribe_icon Windspire.......................76510</li>
+				<li>selected_tribe_icon Dawnblade.......................75560</li>
+				<li>selected_tribe_icon Ironsoul........................74510</li>
+				<li>selected_tribe_icon Emberwind.......................73560</li>
+				<li>selected_tribe_icon Obsidianveil....................72520</li>
+				<li>selected_tribe_icon Moonwhisper.....................71510</li>
+				<li>selected_tribe_icon Starlance.......................70560</li>
+				<li>selected_tribe_icon Flamefang.......................69510</li>
+				<li>selected_tribe_icon Brightstorm.....................68560</li>
+				<li>selected_tribe_icon Frostwhisper....................67520</li>
+				<li>selected_tribe_icon Voidblade.......................66510</li>
+				<li>selected_tribe_icon Ironsight.......................65560</li>
+				<li>selected_tribe_icon Windfury........................64520</li>
+				<li>selected_tribe_icon Shadowscythe....................63510</li>
+				<li>selected_tribe_icon Emberhowl.......................62560</li>
+				<li>selected_tribe_icon Skycaller.......................61510</li>
+				<li>selected_tribe_icon Thunderlash.....................60560</li>
+				<li>selected_tribe_icon Ironveil........................59510</li>
+				<li>selected_tribe_icon Crimsonstorm....................58560</li>
+				<li>selected_tribe_icon Riftveil........................57520</li>
+				<li>selected_tribe_icon Stonefang.......................56510</li>
+				<li>selected_tribe_icon Voidwhisper.....................55560</li>
+			</ol>
+		}
+	</div>
 </body>
 </html>
