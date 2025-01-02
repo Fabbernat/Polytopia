@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bern\u00E1t\\source\\repos\\Polytopia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3A3685CA-263B-4FFA-B7C8-81CDBE013BD7}|Polytopia\\Polytopia.csproj|c:\\users\\bern\u00E1t\\source\\repos\\polytopia\\polytopia\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A3685CA-263B-4FFA-B7C8-81CDBE013BD7}|Polytopia\\Polytopia.csproj|solutionrelative:polytopia\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A3685CA-263B-4FFA-B7C8-81CDBE013BD7}|Polytopia\\Polytopia.csproj|c:\\users\\bern\u00E1t\\source\\repos\\polytopia\\polytopia\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3A3685CA-263B-4FFA-B7C8-81CDBE013BD7}|Polytopia\\Polytopia.csproj|solutionrelative:polytopia\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A3685CA-263B-4FFA-B7C8-81CDBE013BD7}|Polytopia\\Polytopia.csproj|c:\\users\\bern\u00E1t\\source\\repos\\polytopia\\polytopia\\views\\home\\halloffame.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A3685CA-263B-4FFA-B7C8-81CDBE013BD7}|Polytopia\\Polytopia.csproj|solutionrelative:polytopia\\views\\home\\halloffame.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A3685CA-263B-4FFA-B7C8-81CDBE013BD7}|Polytopia\\Polytopia.csproj|c:\\users\\bern\u00E1t\\source\\repos\\polytopia\\polytopia\\views\\home\\throneroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A3685CA-263B-4FFA-B7C8-81CDBE013BD7}|Polytopia\\Polytopia.csproj|solutionrelative:polytopia\\views\\home\\throneroom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A3685CA-263B-4FFA-B7C8-81CDBE013BD7}|Polytopia\\Polytopia.csproj|c:\\users\\bern\u00E1t\\source\\repos\\polytopia\\polytopia\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A3685CA-263B-4FFA-B7C8-81CDBE013BD7}|Polytopia\\Polytopia.csproj|solutionrelative:polytopia\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A3685CA-263B-4FFA-B7C8-81CDBE013BD7}|Polytopia\\Polytopia.csproj|c:\\users\\bern\u00E1t\\source\\repos\\polytopia\\polytopia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A3685CA-263B-4FFA-B7C8-81CDBE013BD7}|Polytopia\\Polytopia.csproj|solutionrelative:polytopia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Bern\u00E1t\\source\\repos\\Polytopia\\Polytopia\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Polytopia\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Bern\u00E1t\\source\\repos\\Polytopia\\Polytopia\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Polytopia\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-02T22:40:27.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bern\u00E1t\\source\\repos\\Polytopia\\Polytopia\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "Polytopia\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\Bern\u00E1t\\source\\repos\\Polytopia\\Polytopia\\Views\\Home\\About.cshtml*",
+              "RelativeToolTip": "Polytopia\\Views\\Home\\About.cshtml*",
+              "ViewState": "AgIAAJsAAAAAAAAAAADwv8AAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T22:24:54.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ThroneRoom.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bern\u00E1t\\source\\repos\\Polytopia\\Polytopia\\Views\\Home\\ThroneRoom.cshtml",
+              "RelativeDocumentMoniker": "Polytopia\\Views\\Home\\ThroneRoom.cshtml",
+              "ToolTip": "C:\\Users\\Bern\u00E1t\\source\\repos\\Polytopia\\Polytopia\\Views\\Home\\ThroneRoom.cshtml",
+              "RelativeToolTip": "Polytopia\\Views\\Home\\ThroneRoom.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T22:24:44.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HallOfFame.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bern\u00E1t\\source\\repos\\Polytopia\\Polytopia\\Views\\Home\\HallOfFame.cshtml",
+              "RelativeDocumentMoniker": "Polytopia\\Views\\Home\\HallOfFame.cshtml",
+              "ToolTip": "C:\\Users\\Bern\u00E1t\\source\\repos\\Polytopia\\Polytopia\\Views\\Home\\HallOfFame.cshtml",
+              "RelativeToolTip": "Polytopia\\Views\\Home\\HallOfFame.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T22:24:40.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bern\u00E1t\\source\\repos\\Polytopia\\Polytopia\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Polytopia\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bern\u00E1t\\source\\repos\\Polytopia\\Polytopia\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Polytopia\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T22:24:37.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Bern\u00E1t\\source\\repos\\Polytopia\\Polytopia\\Program.cs",
+              "RelativeDocumentMoniker": "Polytopia\\Program.cs",
+              "ToolTip": "C:\\Users\\Bern\u00E1t\\source\\repos\\Polytopia\\Polytopia\\Program.cs",
+              "RelativeToolTip": "Polytopia\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T22:23:05.613Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
