@@ -1,38 +1,152 @@
 ﻿@{
-	ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home Page";
+    var gamesList = ViewData["GamesList"] as List<string>;
 }
 
 <div class="text-center">
-	<h1 class="display-4">The Battle of Polytopia</h1>
-	<form action="Game/Index.cshtml" method="post">
-		<label for="my-games class="toggle">
-			<input type="submit" name="my-games" value="My games" />
-			<span class="toggle-btn">
+    <h1 class="display-4">The Battle of Polytopia</h1>
 
-			</span>
+    <button id="newGameBtn" class="btn toggle-btn">Create New Game</button>
 
-		</label>
-	</form>
+    <form action="/" method="post">
+        <button type="submit" name="my-games" class="btn toggle-btn">My Games</button>
+        <ul>
+            @foreach (var game in gamesList)
+            {
+                <li>
+                    <button class="btn game-btn">@game</button>
+                    <button class="delete-btn">&#128465;</button> <!-- Bin icon (Unicode) -->
+                </li>
+            }
+        </ul>
+    </form>
 
+    <div id="gamesDropdown" class="dropdown-container">
+        <ul id="gamesList" class="dropdown-list">
+            @if (gamesList != null && gamesList.Any())
+            {
+                @foreach (var game in gamesList)
+                {
+                    <li><button class="btn game-btn">@game</button></li>
+                }
+            }
+            else
+            {
+                <li>No games available</li>
+            }
+        </ul>
+    </div>
 </div>
-<style>
-	.toggle .toggle-btn {
-		display: inline-block;
-		width: 60px;
-		text-align: center;
-		padding: 5px 0;
-		font-size: 14px;
-		font-weight: bold;
-		color: white;
-		background-color: lightblue;
-		border-radius: 5px;
-		user-select: none;
-		transition: all 0.3s ease;
-	}
 
-	.toggle .toggle-btn:hover {
-		background-color: white;
-		color: black;
-		border: 1px solid black;
-	}
+<style>
+    .toggle-btn {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        background-color: dodgerblue;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 10px;
+    }
+
+        .toggle-btn:hover {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+
+    .game-btn {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background-color: blue;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        margin: 5px;
+    }
+
+        .game-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .game-btn:active {
+            transform: scale(1.2);
+        }
+
+    .dropdown-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 10px 0 0;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        width: 200px;
+        display: none;
+        position: absolute;
+    }
+
+        .dropdown-list li {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+            .dropdown-list li:hover {
+                background-color: #e1e1e1;
+            }
 </style>
+
+<script>
+    document.getElementById("newGameBtn").addEventListener("click", function() {
+        // Redirect or handle new game creation logic here
+        alert("Created a New Game!");
+        window.location.href = "/";
+    });
+
+    document.getElementById("myGamesBtn").addEventListener("click", function() {
+        let gamesList = document.getElementById("gamesList");
+
+        if (gamesList.style.display === "none") {
+            gamesList.style.display = "block";
+        } else {
+            gamesList.style.display = "none";
+        }
+    });
+
+        document.querySelectorAll(".delete-btn").forEach(button => {
+        button.addEventListener("click", function(event) {
+            event.stopPropagation(); // Prevent triggering game button click
+            let confirmDelete = confirm("Are you sure you want to delete this game?");
+            if (confirmDelete) {
+                this.parentElement.remove(); // Remove the <li> containing the game
+            }
+            alert("Are you sure you want to delete this game?");
+        });
+    });
+
+        document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".delete-btn").forEach(button => {
+            button.addEventListener("click", function (event) {
+                event.stopPropagation(); // Prevent clicking the game button
+                let confirmDelete = confirm("Are you sure you want to delete this game?");
+                if (confirmDelete) {
+                    this.parentElement.remove(); // Remove the <li> containing the game
+                }
+            });
+        });
+    });
+
+
+
+</script>
