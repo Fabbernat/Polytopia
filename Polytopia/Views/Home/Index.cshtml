@@ -1,4 +1,4 @@
-﻿@{
+﻿﻿@{
     ViewData["Title"] = "Home Page";
     var gamesList = ViewData["GamesList"] as List<string>;
 }
@@ -6,20 +6,29 @@
 <div class="text-center">
     <h1 class="display-4">The Battle of Polytopia</h1>
 
-    <button id="newGameBtn" class="btn toggle-btn">Create New Game</button>
 
     <form action="/" method="post">
-        <button type="submit" name="my-games" class="btn toggle-btn">My Games</button>
-        <ul>
-            @foreach (var game in gamesList)
+        <input type="submit" id="newGameBtn" class="btn toggle-btn" value="Create a New Game">
+    </form>
+        <ul enumeration-type="hidden">
+            @if (gamesList != null && gamesList.Any())
             {
-                <li>
-                    <button class="btn game-btn">@game</button>
-                    <button class="delete-btn">&#128465;</button> <!-- Bin icon (Unicode) -->
-                </li>
+                int i = 0; // Define the counter outside the loop
+
+                @foreach (var game in gamesList)
+                {
+                    <li>
+                        <button class="btn game-btn toggle-btn">@game</button>
+                        <button class="delete-btn">&#128465;</button> <!-- Bin icon (Unicode) -->
+                    </li>
+                    i++; // Increment index properly
+                }
+            }
+            else
+            {
+                <li>No games available</li>
             }
         </ul>
-    </form>
 
     <div id="gamesDropdown" class="dropdown-container">
         <ul id="gamesList" class="dropdown-list">
@@ -39,6 +48,13 @@
 </div>
 
 <style>
+
+    ul {
+        list-style-type: none; /* Removes bullet points */
+        padding: 0; /* Removes left padding */
+        margin: 0; /* Removes any default margins */
+    }
+
     .toggle-btn {
         display: inline-block;
         padding: 10px 15px;

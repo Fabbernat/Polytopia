@@ -4,6 +4,7 @@ wwwroot\favicon.ico
 wwwroot\images\Fabbernat-polyhead.jpg
 wwwroot\images\polytopia-background.jpg
 wwwroot\images\polytopia-main-menu.webp
+wwwroot\images\soundfx-ico.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

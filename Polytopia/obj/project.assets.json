@@ -6736,11 +6736,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bernát\\Source\\Repos\\Polytopia\\Polytopia\\Polytopia.csproj",
+      "projectUniqueName": "C:\\RiderProjects\\Polytopia\\Polytopia\\Polytopia.csproj",
       "projectName": "Polytopia",
-      "projectPath": "C:\\Users\\Bernát\\Source\\Repos\\Polytopia\\Polytopia\\Polytopia.csproj",
+      "projectPath": "C:\\RiderProjects\\Polytopia\\Polytopia\\Polytopia.csproj",
       "packagesPath": "C:\\Users\\Bernát\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bernát\\Source\\Repos\\Polytopia\\Polytopia\\obj\\",
+      "outputPath": "C:\\RiderProjects\\Polytopia\\Polytopia\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,17 +1,21 @@
 ﻿@model Polytopia.Models.Game
 
 @{
-    ViewData["Title"] = "The Battle of Polytopia";
+    if (ViewData != null){
+    ViewData["Title"] = "Game Index";
+    } else {
+        <p>ViewData could not be loaded. </p>
+    }
 }
-
+<h1>The Battle of Polytopia</h1>
 <h2>Üdv, @Model.Username!</h2>
-<h3>A választott törzsed: @Model.SelectedTribe</h3>
+<h3>Please select a tribe! @Model.SelectedTribe</h3>
 
-<h4>Botok száma: @Model.BotCount</h4>
+<h4>Number of bots @Model.BotCount</h4>
 <ul>
     @foreach (var botTribe in Model.BotTribes)
     {
-        <li>Bot törzs: @botTribe</li>
+        <li>Bot tribe: @botTribe</li>
     }
 </ul>
 

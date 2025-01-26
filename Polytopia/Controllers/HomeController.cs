@@ -6,6 +6,7 @@ namespace Polytopia.Controllers
 {
     public class HomeController : Controller
     {
+        private const string SessionGamesList = "GamesList"; // Session key
 
         private static readonly string[] Adjectives = {
     "Majestic", "Noble", "Grand", "Sovereign", "Sacred", "Eldritch", "Immortal", "Daring",
@@ -38,37 +39,30 @@ namespace Polytopia.Controllers
 
         public IActionResult Index()
         {
-            // Simulate user login (replace this with actual login logic)
-            HttpContext.Session.SetString("UserId", "12345");
+            // Retrieve games list from session or initialize if empty
+            var gamesList = HttpContext.Session.GetObjectFromJson<List<string>>(SessionGamesList) ?? new List<string>();
 
-            // Simulate user games from session
-            var sessionGames = HttpContext.Session.GetString("UserGames")?.Split(',').ToList() ?? new List<string>();
-
-            if (Adjectives == null || Adjectives.Length == 0)
-            {
-                return StatusCode(500, "Error: Cannot generate game name, as the array is empty.");
-            }
-            // Generate 5 new random game names
-            var random = new Random();
-            var generatedGames = new List<string>();
-            for (int i = 0; i < 5; i++)
-            {
-                _logger.LogInformation($"Adjectives count: {Adjectives?.Length ?? 0}");
-                string adjective = Adjectives[random.Next(Adjectives.Length)];
-                string noun = (random.Next(2) == 0) ? Nouns[random.Next(Nouns.Length)] : FunnyNouns[random.Next(FunnyNouns.Length)];
-                generatedGames.Add($"{adjective} {noun}");
-            }
-
-            // Merge session games with generated ones
-            var allGames = sessionGames.Concat(generatedGames).Distinct().ToList();
-
-            // Store updated games back in session
-            HttpContext.Session.SetString("UserGames", string.Join(",", allGames));
-
-            // Pass data to view
-            ViewData["GamesList"] = allGames;
+            // Pass games list to ViewData
+            ViewData["GamesList"] = gamesList;
             return View();
         }
+
+        [HttpPost]
+        public IActionResult CreateGame()
+        {
+            var gamesList = HttpContext.Session.GetObjectFromJson<List<string>>(SessionGamesList) ?? new List<string>();
+
+            // Generate a unique game name (Example: "Game #1", "Game #2", etc.)
+            int newGameNumber = gamesList.Count + 1;
+            gamesList.Add($"Game #{newGameNumber}");
+
+            // Save updated list to session
+            HttpContext.Session.SetObjectAsJson(SessionGamesList, gamesList);
+
+            // Redirect back to index
+            return RedirectToAction("Index");
+        }
+        
 
         public IActionResult Settings()
         {
