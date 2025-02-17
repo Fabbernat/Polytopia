@@ -5,6 +5,7 @@ The Battle of Polytopia is a 4X turn-based strategy game developed and published
 Players play as one of sixteen tribes to develop an empire and defeat opponents in a low poly square-shaped world.
 Players can play against bots or human opponents, local or online.
 The game was initially released in February 2016 and November 2016 in USA.
+### Development
 The Battle of Polytopia was created by Felix Ekenstam, a Swedish freelancer who developed Flash games. He founded the game's developer indie game studio Midjiwan AB and was its sole employee at first.[9] Ekenstam began drawing concept art in 2012, and worked on the title in his spare time until its release.[1] Ekenstam intended for Polytopia to be a strategy game that featured the simplicity common with other mobile games, and without heavy focus on microtransactions.[10] Midjiwan released several updates for the game after release; the company's CEO Christian Lövstedt said that the team tested various new ideas and concepts for gameplay, but mentioned that studio eliminated "90% of everything it tests".[11] Ekenstam related that he regularly kept contact with players on social media to hint at new gameplay elements and ask for feedback.[1] Polytopia was originally created through Adobe Flash,[12] but was later developed through Unity.[13]
 
 **source:** https://en.wikipedia.org/wiki/The_Battle_of_Polytopia
